@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <script>
+        document.documentElement.classList.add('js');
+
+        /* Elementos animados começam ocultos (sem piscar); se as animações não rodarem em 3s
+           (GSAP fora do ar, erro no animations.js), tudo aparece */
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('anime');
+            setTimeout(function () {
+                if (!window.siteAnime) {
+                    document.documentElement.classList.remove('anime');
+                }
+            }, 3000);
+        }
+    </script>
+
+    <title>Contato e orçamento | João Wergutz</title>
+<meta name='robots' content='max-image-preview:large' />
+    <meta name="description" content="Peça um orçamento de site sem compromisso. Fale com João Wergutz pelo WhatsApp (51) 98936-5169 ou pelo e-mail joaowergutz06@gmail.com.">
+    <meta name="author" content="João Pedro Wergutz">
+    <meta name="theme-color" content="#0c0c0e">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="João Wergutz">
+    <meta property="og:title" content="Contato e orçamento | João Wergutz">
+    <meta property="og:description" content="Peça um orçamento de site sem compromisso. Fale com João Wergutz pelo WhatsApp (51) 98936-5169 ou pelo e-mail joaowergutz06@gmail.com.">
+    <meta property="og:url" content="https://joaowergutz.github.io/contato/">
+    <meta property="og:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contato e orçamento | João Wergutz">
+    <meta name="twitter:description" content="Peça um orçamento de site sem compromisso. Fale com João Wergutz pelo WhatsApp (51) 98936-5169 ou pelo e-mail joaowergutz06@gmail.com.">
+    <meta name="twitter:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/joaowergutz/assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/wp-content/themes/joaowergutz/assets/img/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/joaowergutz/assets/img/apple-touch-icon.png">
+    <link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","url":"/contato/","mainEntity":{"@type":"Person","@id":"/#joao","name":"João Pedro Wergutz","alternateName":"João Wergutz","jobTitle":"Desenvolvedor Frontend","description":"Criação de sites, lojas virtuais e landing pages em Santa Clara do Sul e no Vale do Taquari. Rápidos, bonitos e prontos para o Google.","url":"/","image":"/wp-content/themes/joaowergutz/assets/img/joao.webp","email":"mailto:joaowergutz06@gmail.com","telephone":"+5551989365169","address":{"@type":"PostalAddress","addressLocality":"Santa Clara do Sul","addressRegion":"RS","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/","https://github.com/joaowergutz"],"knowsAbout":["Desenvolvimento frontend","JavaScript","PHP","WordPress","HTML","CSS","SEO","Performance web","UX","Lojas virtuais","Landing pages"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sites institucionais","description":"A vitrine da sua empresa na internet: quem você é, o que faz e como falar com você.","url":"/servicos/#sites-institucionais","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lojas virtuais","description":"Venda pela internet com uma loja fácil de navegar e de administrar.","url":"/servicos/#lojas-virtuais","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Páginas para anúncios (Landing pages)","description":"Uma página com um único objetivo: transformar quem clicou no seu anúncio em contato.","url":"/servicos/#landing-pages","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Blogs","description":"Conteúdo que atrai visitas do Google e mostra que você entende do assunto.","url":"/servicos/#blogs","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Aparecer no Google (SEO)","description":"Ajustes para sua empresa aparecer quando alguém procura no Google pelo que você faz.","url":"/servicos/#seo","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Site mais rápido (Performance)","description":"Site lento perde cliente. Deixo o seu mais leve e rápido, principalmente no celular.","url":"/servicos/#performance","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de sites","description":"Seu site atualizado, seguro e funcionando, sem você precisar se preocupar.","url":"/servicos/#manutencao","areaServed":"BR"}}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"/"},{"@type":"ListItem","position":2,"name":"Contato","item":"/contato/"}]}</script>
+
+<link rel='stylesheet' id='site-main-css' href='/wp-content/themes/joaowergutz/assets/css/main.css?ver=1.3.1' media='all' />
+<link rel="canonical" href="https://joaowergutz.github.io/contato/" />
+</head>
+
+<body class="wp-singular page-template-default page page-id-9 wp-embed-responsive wp-theme-joaowergutz">
+
+
+<a class="screen-reader-text" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-row">
+            <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                <span class="logo-marca" aria-hidden="true">JW</span>
+                <span class="logo-nome">João Wergutz</span>
+            </a>
+
+            <nav class="nav-h d-none d-lg-block" aria-label="Menu principal">
+                <ul>
+                                            <li>
+                            <a
+                                href="/"
+                                                            >Início</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/projetos/"
+                                                            >Projetos</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/servicos/"
+                                                            >Serviços</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/sobre/"
+                                                            >Sobre</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/contato/"
+                                class="ativo" aria-current="page"                            >Contato</a>
+                        </li>
+                                    </ul>
+            </nav>
+
+            <div class="acoes-h">
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="botao botao-destaque botao-p botao-h"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                    <span>Vamos conversar</span>
+                </a>
+
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="icone-h d-lg-none"
+                    aria-label="Falar com João pelo WhatsApp"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                </a>
+
+                <button
+                    class="menu-toggle d-lg-none"
+                    type="button"
+                    aria-controls="menu-mobile"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-mobile" id="menu-mobile" data-lenis-prevent hidden>
+    <nav aria-label="Menu mobile">
+        <ul>
+                            <li>
+                    <a
+                        href="/"
+                                            >
+                        <span class="rotulo">01</span>
+                        Início                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/projetos/"
+                                            >
+                        <span class="rotulo">02</span>
+                        Projetos                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/servicos/"
+                                            >
+                        <span class="rotulo">03</span>
+                        Serviços                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/sobre/"
+                                            >
+                        <span class="rotulo">04</span>
+                        Sobre                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/contato/"
+                        aria-current="page"                    >
+                        <span class="rotulo">05</span>
+                        Contato                    </a>
+                </li>
+                    </ul>
+    </nav>
+
+    <div class="menu-mobile-rodape">
+        <a
+            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+            target="_blank"
+            rel="noopener"
+            class="botao botao-destaque"
+        >
+            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>            <span>Falar no WhatsApp</span>
+        </a>
+        <a href="mailto:joaowergutz06@gmail.com" class="menu-mobile-email">
+            joaowergutz06@gmail.com        </a>
+    </div>
+</div>
+
+<main id="conteudo" tabindex="-1">
+<section class="page-hero">
+    <div class="page-hero-brilho" aria-hidden="true"></div>
+    <div class="container">
+                    <p class="rotulo" data-anime>Contato</p>
+        
+        <h1 class="page-hero-titulo" data-anime>Vamos conversar sobre o <em>seu site</em>?</h1>
+
+                    <p class="page-hero-texto" data-anime>Responda três perguntas rápidas e a sua mensagem chega pronta no meu WhatsApp. Se preferir, fale direto pelos canais ao lado.</p>
+            </div>
+</section>
+
+<section class="secao contato">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <form class="form-contato" data-form-contato novalidate>
+                    <p class="form-progresso" aria-live="polite" data-progresso>Etapa 1 de 3</p>
+
+                    <fieldset class="form-etapa" data-etapa="1">
+                        <legend class="form-legenda">O que você precisa?</legend>
+                        <div class="opcoes">
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Sites institucionais" required>
+                                    <span><i class="bi bi-building" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/><path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/></svg></i> Sites institucionais</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Lojas virtuais" required>
+                                    <span><i class="bi bi-cart3" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg></i> Lojas virtuais</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Páginas para anúncios" required>
+                                    <span><i class="bi bi-rocket-takeoff" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/><path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/><path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/></svg></i> Páginas para anúncios</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Blogs" required>
+                                    <span><i class="bi bi-journal-text" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/></svg></i> Blogs</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Aparecer no Google" required>
+                                    <span><i class="bi bi-graph-up-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/></svg></i> Aparecer no Google</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Site mais rápido" required>
+                                    <span><i class="bi bi-speedometer2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/></svg></i> Site mais rápido</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="servico" value="Manutenção de sites" required>
+                                    <span><i class="bi bi-wrench-adjustable" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/><path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.5 4.5 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg></i> Manutenção de sites</span>
+                                </label>
+                                                        <label class="opcao">
+                                <input type="radio" name="servico" value="Análise gratuita do meu site atual" required>
+                                <span><i class="bi bi-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></i> Análise gratuita do meu site</span>
+                            </label>
+                            <label class="opcao">
+                                <input type="radio" name="servico" value="Ainda não sei, quero uma orientação" required>
+                                <span><i class="bi bi-chat-dots" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/><path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/></svg></i> Ainda não sei</span>
+                            </label>
+                        </div>
+                        <p class="form-erro" data-erro hidden>Escolha uma opção para continuar.</p>
+                    </fieldset>
+
+                    <fieldset class="form-etapa" data-etapa="2">
+                        <legend class="form-legenda">Para quando você precisa?</legend>
+                        <div class="opcoes">
+                                                            <label class="opcao">
+                                    <input type="radio" name="prazo" value="O quanto antes" required>
+                                    <span>O quanto antes</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="prazo" value="Nos próximos 30 dias" required>
+                                    <span>Nos próximos 30 dias</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="prazo" value="Em 2 a 3 meses" required>
+                                    <span>Em 2 a 3 meses</span>
+                                </label>
+                                                            <label class="opcao">
+                                    <input type="radio" name="prazo" value="Ainda estou pesquisando" required>
+                                    <span>Ainda estou pesquisando</span>
+                                </label>
+                                                    </div>
+                        <p class="form-erro" data-erro hidden>Escolha uma opção para continuar.</p>
+                    </fieldset>
+
+                    <fieldset class="form-etapa" data-etapa="3">
+                        <legend class="form-legenda">Conte um pouco sobre você</legend>
+                        <div class="campos">
+                            <label class="campo">
+                                <span>Seu nome</span>
+                                <input type="text" name="nome" autocomplete="name" required>
+                            </label>
+                            <label class="campo">
+                                <span>Empresa <small>(opcional)</small></span>
+                                <input type="text" name="empresa" autocomplete="organization">
+                            </label>
+                            <label class="campo campo-inteiro">
+                                <span>Seu site atual <small>(se tiver)</small></span>
+                                <input type="text" name="site" inputmode="url" autocomplete="url" placeholder="www.suaempresa.com.br">
+                            </label>
+                            <label class="campo campo-inteiro">
+                                <span>Mensagem <small>(opcional)</small></span>
+                                <textarea name="mensagem" rows="4" placeholder="Ex.: tenho uma loja de móveis e quero um site para mostrar os produtos."></textarea>
+                            </label>
+                        </div>
+                        <p class="form-erro" data-erro hidden>Informe o seu nome para continuar.</p>
+                    </fieldset>
+
+                    <div class="form-botoes">
+                        <button type="button" class="botao botao-contorno-escuro" data-voltar hidden>
+                            <span>Voltar</span>
+                        </button>
+                        <button type="button" class="botao botao-escuro" data-avancar>
+                            <span>Continuar</span>
+                            <i class="bi bi-arrow-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg></i>                        </button>
+                        <button type="submit" class="botao botao-escuro" data-enviar>
+                            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                            <span>Enviar pelo WhatsApp</span>
+                        </button>
+                    </div>
+
+                    <p class="form-aviso">
+                        Seus dados não ficam salvos neste site: a mensagem é aberta no seu WhatsApp para você enviar.
+                    </p>
+                </form>
+            </div>
+
+            <div class="col-lg-5">
+                <ul class="canais">
+                    <li data-anime>
+                        <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="canal">
+                            <span class="canal-icone"><i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i></span>
+                            <span class="canal-texto">
+                                <strong>WhatsApp</strong>
+                                <span>(51) 98936-5169</span>
+                            </span>
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                        </a>
+                    </li>
+                    <li data-anime>
+                        <div class="canal">
+                            <span class="canal-icone"><i class="bi bi-envelope" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg></i></span>
+                            <a href="mailto:joaowergutz06@gmail.com" class="canal-texto">
+                                <strong>E-mail</strong>
+                                <span>joaowergutz06@gmail.com</span>
+                            </a>
+                            <button type="button" class="canal-copiar" data-copiar="joaowergutz06@gmail.com" aria-label="Copiar e-mail">
+                                <i class="bi bi-copy" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/></svg></i>                            </button>
+                        </div>
+                    </li>
+                    <li data-anime>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/" target="_blank" rel="noopener" class="canal">
+                            <span class="canal-icone"><i class="bi bi-linkedin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></i></span>
+                            <span class="canal-texto">
+                                <strong>LinkedIn</strong>
+                                <span>João Pedro Wergutz</span>
+                            </span>
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                        </a>
+                    </li>
+                    <li data-anime>
+                        <a href="https://github.com/joaowergutz" target="_blank" rel="noopener" class="canal">
+                            <span class="canal-icone"><i class="bi bi-github" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></i></span>
+                            <span class="canal-texto">
+                                <strong>GitHub</strong>
+                                <span>@joaowergutz</span>
+                            </span>
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                        </a>
+                    </li>
+                </ul>
+
+                <p class="selo-disponivel selo-disponivel-escuro" data-anime>
+                    <span class="ponto" aria-hidden="true"></span>
+                    Agenda aberta para projetos em outubro                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secao faq" aria-labelledby="faq-titulo">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <p class="rotulo rotulo-escuro" data-anime>Dúvidas</p>
+                <h2 class="titulo" id="faq-titulo" data-anime>Perguntas <em>frequentes</em></h2>
+                <p class="texto" data-anime>
+                    Não encontrou o que procurava?
+                    <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20sites." target="_blank" rel="noopener">Me chama no WhatsApp</a>.
+                </p>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="faq-lista" data-faq>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Quanto custa um site?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Depende do tipo de site, da quantidade de páginas e das funcionalidades. Me conta o que você precisa pelo WhatsApp ou pelo formulário e eu te envio uma proposta com valor e prazo, sem compromisso.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Quanto tempo leva para o site ficar pronto?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Uma landing page costuma ficar pronta em poucos dias. Um site institucional leva, em média, de 2 a 4 semanas, contando com a aprovação do layout e o envio dos textos e imagens.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Vou conseguir atualizar o site sozinho?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Sim. Os sites são feitos em WordPress e, na entrega, eu te mostro como trocar textos, imagens e publicar novidades. Se preferir, também posso cuidar disso para você.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Meu site vai aparecer no Google?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Todo site já sai preparado para o Google entender o que você faz e onde atende, e para abrir rápido. Isso prepara o terreno. A posição nas buscas também depende da concorrência e do conteúdo ao longo do tempo, e eu te oriento nisso.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Você cuida de domínio e hospedagem?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Te ajudo a registrar o domínio e escolher uma boa hospedagem, e faço toda a configuração para o site ir ao ar com o cadeado de segurança e os e-mails da empresa funcionando.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Você pode analisar o site que eu já tenho?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Posso, e sem custo. Me manda o endereço pelo WhatsApp que eu reviso a velocidade, como ele fica no celular e como aparece no Google, e te digo o que vale a pena melhorar.</p>
+                        </details>
+                                            <details class="faq-item" data-anime>
+                            <summary>
+                                <span>Atende empresas de outras cidades?</span>
+                                <i class="bi bi-plus-lg" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></i>                            </summary>
+                            <p>Sim. Sou de Santa Clara do Sul, no Vale do Taquari, e atendo empresas da região e de qualquer lugar do Brasil: todo o processo pode ser feito a distância, por WhatsApp e chamadas de vídeo.</p>
+                        </details>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row footer-topo g-5">
+            <div class="col-lg-5">
+                <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                    <span class="logo-marca" aria-hidden="true">JW</span>
+                    <span class="logo-nome">João Wergutz</span>
+                </a>
+                <p class="texto texto-c footer-sobre">
+                    Desenvolvedor de sites para pequenas e médias empresas. Sites institucionais, lojas virtuais e páginas para anúncios
+                    rápidos, bonitos e prontos para o Google. Santa Clara do Sul/RS, Vale do Taquari.
+                </p>
+                <p class="selo-disponivel">
+                    <span class="ponto" aria-hidden="true"></span>
+                    Agenda aberta para novos projetos
+                </p>
+            </div>
+
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h2 class="footer-titulo">Navegação</h2>
+                <nav class="footer-menu" aria-label="Menu do rodapé">
+                    <ul>
+                                                    <li>
+                                <a href="/">Início</a>
+                            </li>
+                                                    <li>
+                                <a href="/projetos/">Projetos</a>
+                            </li>
+                                                    <li>
+                                <a href="/servicos/">Serviços</a>
+                            </li>
+                                                    <li>
+                                <a href="/sobre/">Sobre</a>
+                            </li>
+                                                    <li>
+                                <a href="/contato/">Contato</a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+
+            <div class="col-6 col-lg-4">
+                <h2 class="footer-titulo">Contato</h2>
+                <ul class="footer-contatos">
+                    <li>
+                        <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener">
+                            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                            <span>(51) 98936-5169</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:joaowergutz06@gmail.com">
+                            <i class="bi bi-envelope" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg></i>                            <span>joaowergutz06@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/" target="_blank" rel="noopener">
+                            <i class="bi bi-linkedin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></i>                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/joaowergutz" target="_blank" rel="noopener">
+                            <i class="bi bi-github" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></i>                            <span>GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-gigante" data-texto="João Wergutz" aria-hidden="true"></div>
+
+        <div class="footer-base">
+            <p>© 2026 João Pedro Wergutz. Todos os direitos reservados.</p>
+            <a href="/politica-de-privacidade/">Política de privacidade</a>
+            <a href="#conteudo" class="topo">Voltar ao topo <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i></a>
+        </div>
+    </div>
+</footer>
+
+<nav class="barra-contato" aria-label="Contato rápido">
+    <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="botao botao-destaque">
+        <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>        <span>WhatsApp</span>
+    </a>
+    <a href="/#analise" class="botao botao-contorno">
+        <i class="bi bi-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></i>        <span>Análise grátis</span>
+    </a>
+</nav>
+
+<a
+    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com João pelo WhatsApp"
+>
+    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i></a>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/joaowergutz/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script data-wp-strategy="defer" defer id="site-navigation-js" src="/wp-content/themes/joaowergutz/assets/js/navigation.js?ver=1.3.1"></script>
+<script data-wp-strategy="defer" defer id="gsap-js" src="/wp-content/themes/joaowergutz/assets/vendor/gsap.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="gsap-scrolltrigger-js" src="/wp-content/themes/joaowergutz/assets/vendor/ScrollTrigger.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="lenis-js" src="/wp-content/themes/joaowergutz/assets/vendor/lenis.min.js?ver=1.3.26"></script>
+<script data-wp-strategy="defer" defer id="site-animations-js" src="/wp-content/themes/joaowergutz/assets/js/animations.js?ver=1.3.1"></script>
+<script id="site-contato-js-extra">
+var siteContato = {"whatsapp":"5551989365169"};
+//# sourceURL=site-contato-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="site-contato-js" src="/wp-content/themes/joaowergutz/assets/js/contato.js?ver=1.3.1"></script>
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <script>
+        document.documentElement.classList.add('js');
+
+        /* Elementos animados começam ocultos (sem piscar); se as animações não rodarem em 3s
+           (GSAP fora do ar, erro no animations.js), tudo aparece */
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('anime');
+            setTimeout(function () {
+                if (!window.siteAnime) {
+                    document.documentElement.classList.remove('anime');
+                }
+            }, 3000);
+        }
+    </script>
+
+    <title>Serviços: sites, lojas virtuais e SEO | João Wergutz</title>
+<meta name='robots' content='max-image-preview:large' />
+    <meta name="description" content="Criação de sites institucionais, lojas virtuais, landing pages e blogs, além de SEO, otimização de performance e manutenção de sites WordPress.">
+    <meta name="author" content="João Pedro Wergutz">
+    <meta name="theme-color" content="#0c0c0e">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="João Wergutz">
+    <meta property="og:title" content="Serviços: sites, lojas virtuais e SEO | João Wergutz">
+    <meta property="og:description" content="Criação de sites institucionais, lojas virtuais, landing pages e blogs, além de SEO, otimização de performance e manutenção de sites WordPress.">
+    <meta property="og:url" content="https://joaowergutz.github.io/servicos/">
+    <meta property="og:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serviços: sites, lojas virtuais e SEO | João Wergutz">
+    <meta name="twitter:description" content="Criação de sites institucionais, lojas virtuais, landing pages e blogs, além de SEO, otimização de performance e manutenção de sites WordPress.">
+    <meta name="twitter:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/joaowergutz/assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/wp-content/themes/joaowergutz/assets/img/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/joaowergutz/assets/img/apple-touch-icon.png">
+    <link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Serviços","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Service","name":"Sites institucionais","description":"Um site sob medida para apresentar sua empresa com a credibilidade que ela tem fora da internet. Páginas de serviços, sobre, contato e tudo o que o seu cliente precisa para decidir, com botões de WhatsApp em cada página.","url":"/servicos/#sites-institucionais","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":2,"item":{"@type":"Service","name":"Lojas virtuais","description":"Loja virtual com catálogo, carrinho, frete e pagamento online, pronta para vender todos os dias. Você cadastra produtos e acompanha pedidos por um painel simples.","url":"/servicos/#lojas-virtuais","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":3,"item":{"@type":"Service","name":"Páginas para anúncios (Landing pages)","description":"Página feita para anúncios no Google, Instagram e Facebook, lançamentos e promoções. Texto direto, motivos para confiar em você e botões de contato no lugar certo, para cada real investido em anúncio render mais.","url":"/servicos/#landing-pages","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":4,"item":{"@type":"Service","name":"Blogs","description":"Blog integrado ao seu site para publicar artigos, novidades e dicas. Cada post bem estruturado é mais uma porta de entrada para novos clientes pelas buscas.","url":"/servicos/#blogs","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":5,"item":{"@type":"Service","name":"Aparecer no Google (SEO)","description":"Reviso o seu site por dentro e por fora para o Google entender o que você faz e onde atende, e mostrar a sua empresa para quem está procurando. Ideal para quem atende uma cidade ou região.","url":"/servicos/#seo","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":6,"item":{"@type":"Service","name":"Site mais rápido (Performance)","description":"Quem espera o site carregar desiste e vai para o concorrente. Deixo imagens e código mais leves para o seu site abrir rápido, o que agrada o visitante e também o Google.","url":"/servicos/#performance","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}},{"@type":"ListItem","position":7,"item":{"@type":"Service","name":"Manutenção de sites","description":"Atualizações de segurança, cópias de segurança (backups), correção de erros, ajustes de visual e troca de textos e fotos. Um suporte de confiança para quando você precisar.","url":"/servicos/#manutencao","areaServed":"BR","provider":{"@type":"Person","@id":"/#joao"}}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"/"},{"@type":"ListItem","position":2,"name":"Serviços","item":"/servicos/"}]}</script>
+
+<link rel='stylesheet' id='site-main-css' href='/wp-content/themes/joaowergutz/assets/css/main.css?ver=1.3.1' media='all' />
+<link rel="canonical" href="https://joaowergutz.github.io/servicos/" />
+</head>
+
+<body class="wp-singular page-template-default page page-id-7 wp-embed-responsive wp-theme-joaowergutz">
+
+
+<a class="screen-reader-text" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-row">
+            <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                <span class="logo-marca" aria-hidden="true">JW</span>
+                <span class="logo-nome">João Wergutz</span>
+            </a>
+
+            <nav class="nav-h d-none d-lg-block" aria-label="Menu principal">
+                <ul>
+                                            <li>
+                            <a
+                                href="/"
+                                                            >Início</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/projetos/"
+                                                            >Projetos</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/servicos/"
+                                class="ativo" aria-current="page"                            >Serviços</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/sobre/"
+                                                            >Sobre</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/contato/"
+                                                            >Contato</a>
+                        </li>
+                                    </ul>
+            </nav>
+
+            <div class="acoes-h">
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="botao botao-destaque botao-p botao-h"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                    <span>Vamos conversar</span>
+                </a>
+
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="icone-h d-lg-none"
+                    aria-label="Falar com João pelo WhatsApp"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                </a>
+
+                <button
+                    class="menu-toggle d-lg-none"
+                    type="button"
+                    aria-controls="menu-mobile"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-mobile" id="menu-mobile" data-lenis-prevent hidden>
+    <nav aria-label="Menu mobile">
+        <ul>
+                            <li>
+                    <a
+                        href="/"
+                                            >
+                        <span class="rotulo">01</span>
+                        Início                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/projetos/"
+                                            >
+                        <span class="rotulo">02</span>
+                        Projetos                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/servicos/"
+                        aria-current="page"                    >
+                        <span class="rotulo">03</span>
+                        Serviços                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/sobre/"
+                                            >
+                        <span class="rotulo">04</span>
+                        Sobre                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/contato/"
+                                            >
+                        <span class="rotulo">05</span>
+                        Contato                    </a>
+                </li>
+                    </ul>
+    </nav>
+
+    <div class="menu-mobile-rodape">
+        <a
+            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+            target="_blank"
+            rel="noopener"
+            class="botao botao-destaque"
+        >
+            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>            <span>Falar no WhatsApp</span>
+        </a>
+        <a href="mailto:joaowergutz06@gmail.com" class="menu-mobile-email">
+            joaowergutz06@gmail.com        </a>
+    </div>
+</div>
+
+<main id="conteudo" tabindex="-1">
+<section class="page-hero">
+    <div class="page-hero-brilho" aria-hidden="true"></div>
+    <div class="container">
+                    <p class="rotulo" data-anime>Serviços</p>
+        
+        <h1 class="page-hero-titulo" data-anime>Tudo o que sua empresa precisa para <em>crescer na internet</em></h1>
+
+                    <p class="page-hero-texto" data-anime>Do site novo à manutenção do que já existe. Escolha o serviço ou me conta o seu desafio que eu te ajudo a definir o melhor caminho.</p>
+            </div>
+</section>
+
+<nav class="servicos-atalhos" aria-label="Serviços nesta página">
+    <div class="container">
+        <ul>
+                            <li><a href="#sites-institucionais">Sites institucionais</a></li>
+                            <li><a href="#lojas-virtuais">Lojas virtuais</a></li>
+                            <li><a href="#landing-pages">Páginas para anúncios</a></li>
+                            <li><a href="#blogs">Blogs</a></li>
+                            <li><a href="#seo">Aparecer no Google</a></li>
+                            <li><a href="#performance">Site mais rápido</a></li>
+                            <li><a href="#manutencao">Manutenção de sites</a></li>
+                    </ul>
+    </div>
+</nav>
+
+<section class="secao servicos-pagina">
+    <div class="container">
+                    <article class="servico-bloco" id="sites-institucionais" aria-labelledby="titulo-sites-institucionais">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(01)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-building" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/><path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-sites-institucionais" data-anime>Sites institucionais</h2>
+
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Um site sob medida para apresentar sua empresa com a credibilidade que ela tem fora da internet. Páginas de serviços, sobre, contato e tudo o que o seu cliente precisa para decidir, com botões de WhatsApp em cada página.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Layout exclusivo, sem tema pronto</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Adaptado para celular, tablet e computador</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Painel para editar textos e imagens</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Sites%20institucionais%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Sites institucionais)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="lojas-virtuais" aria-labelledby="titulo-lojas-virtuais">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(02)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-cart3" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-lojas-virtuais" data-anime>Lojas virtuais</h2>
+
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Loja virtual com catálogo, carrinho, frete e pagamento online, pronta para vender todos os dias. Você cadastra produtos e acompanha pedidos por um painel simples.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Pagamento por Pix, cartão e boleto</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Cálculo de frete integrado</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Páginas de produto pensadas para vender</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Lojas%20virtuais%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Lojas virtuais)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="landing-pages" aria-labelledby="titulo-landing-pages">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(03)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-rocket-takeoff" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/><path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/><path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-landing-pages" data-anime>Páginas para anúncios</h2>
+
+                                                    <p class="servico-termo" data-anime>Também chamado de <strong>Landing pages</strong></p>
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Página feita para anúncios no Google, Instagram e Facebook, lançamentos e promoções. Texto direto, motivos para confiar em você e botões de contato no lugar certo, para cada real investido em anúncio render mais.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Feita para gerar contatos</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Pronta para Google Ads e Meta Ads</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Fica pronta em poucos dias</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22P%C3%A1ginas%20para%20an%C3%BAncios%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Páginas para anúncios)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="blogs" aria-labelledby="titulo-blogs">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(04)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-journal-text" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-blogs" data-anime>Blogs</h2>
+
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Blog integrado ao seu site para publicar artigos, novidades e dicas. Cada post bem estruturado é mais uma porta de entrada para novos clientes pelas buscas.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Categorias e busca</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Posts preparados para o Google</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Publicação simples pelo painel</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Blogs%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Blogs)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="seo" aria-labelledby="titulo-seo">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(05)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-graph-up-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-seo" data-anime>Aparecer no Google</h2>
+
+                                                    <p class="servico-termo" data-anime>Também chamado de <strong>SEO</strong></p>
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Reviso o seu site por dentro e por fora para o Google entender o que você faz e onde atende, e mostrar a sua empresa para quem está procurando. Ideal para quem atende uma cidade ou região.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Análise do seu site atual</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Ajustes para buscas da sua região</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Relatório simples do que foi feito</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Aparecer%20no%20Google%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Aparecer no Google)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="performance" aria-labelledby="titulo-performance">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(06)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-speedometer2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-performance" data-anime>Site mais rápido</h2>
+
+                                                    <p class="servico-termo" data-anime>Também chamado de <strong>Performance</strong></p>
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Quem espera o site carregar desiste e vai para o concorrente. Deixo imagens e código mais leves para o seu site abrir rápido, o que agrada o visitante e também o Google.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Imagens mais leves, sem perder qualidade</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Carregamento rápido no celular e no 4G</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Antes e depois medidos na ferramenta do Google</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Site%20mais%20r%C3%A1pido%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Site mais rápido)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+                    <article class="servico-bloco" id="manutencao" aria-labelledby="titulo-manutencao">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <p class="rotulo rotulo-escuro" data-anime>(07)</p>
+                        <div class="servico-icone" data-anime><i class="bi bi-wrench-adjustable" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M16 4.5a4.5 4.5 0 0 1-1.703 3.526L13 5l2.959-1.11q.04.3.041.61"/><path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.5 4.5 0 0 0 11.5 9m-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376M3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg></i></div>
+                        <h2 class="titulo" id="titulo-manutencao" data-anime>Manutenção de sites</h2>
+
+                                            </div>
+
+                    <div class="col-lg-7">
+                        <p class="texto texto-g" data-anime>Atualizações de segurança, cópias de segurança (backups), correção de erros, ajustes de visual e troca de textos e fotos. Um suporte de confiança para quando você precisar.</p>
+
+                        <ul class="lista-check" data-anime>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Atualizações e backups</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Correções e pequenos ajustes</li>
+                                                            <li><i class="bi bi-check2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/></svg></i> Atendimento direto pelo WhatsApp</li>
+                                                    </ul>
+
+                        <a
+                            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20%22Manuten%C3%A7%C3%A3o%20de%20sites%22."
+                            target="_blank"
+                            rel="noopener"
+                            class="link-seta"
+                            data-anime
+                        >
+                            Falar sobre este serviço no WhatsApp <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                            <span class="screen-reader-text">(Manutenção de sites)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            </div>
+</section>
+
+<section class="secao incluso" aria-labelledby="incluso-titulo">
+    <div class="container">
+        <div class="secao-topo">
+            <div>
+                <p class="rotulo rotulo-escuro" data-anime>O que você recebe</p>
+                <h2 class="titulo" id="incluso-titulo" data-anime>Tudo isso vem <em>em todo site</em></h2>
+            </div>
+            <p class="texto secao-topo-texto" data-anime>
+                Sem surpresas: tudo isso já faz parte de todo projeto que eu entrego.
+            </p>
+        </div>
+
+        <ul class="lista-incluso">
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-palette" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"/></svg></i></span>
+                    <h3>Visual exclusivo</h3>
+                    <p>Criado para a sua marca e aprovado por você antes de eu começar a programar.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-phone" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg></i></span>
+                    <h3>Funciona em qualquer tela</h3>
+                    <p>Celular, tablet ou computador: o site se adapta e fica fácil de usar em todos.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></i></span>
+                    <h3>Pronto para o Google</h3>
+                    <p>Preparado para o Google entender o que você faz e mostrar sua empresa nas buscas.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i></span>
+                    <h3>Contato em um clique</h3>
+                    <p>Botões de WhatsApp, telefone e e-mail em todas as páginas, sem o cliente procurar.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-speedometer2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/></svg></i></span>
+                    <h3>Rápido de verdade</h3>
+                    <p>Imagens e código leves para abrir rápido, até no 4G.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-globe2" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/></svg></i></span>
+                    <h3>Domínio, hospedagem e e-mail</h3>
+                    <p>Te ajudo a contratar e deixo tudo configurado, com o cadeado de segurança.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-pencil-square" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/></svg></i></span>
+                    <h3>Você consegue editar</h3>
+                    <p>Na entrega, te mostro como trocar textos e fotos sem depender de ninguém.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-incluso-icone"><i class="bi bi-shield-check" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/><path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/></svg></i></span>
+                    <h3>Suporte depois da entrega</h3>
+                    <p>Dúvidas e ajustes direto comigo pelo WhatsApp. Você não fica sozinho.</p>
+                </li>
+                    </ul>
+    </div>
+</section>
+
+<section class="secao processo processo-escuro" aria-labelledby="processo-titulo">
+    <div class="container">
+        <div class="secao-topo">
+            <div>
+                <p class="rotulo" data-anime>Como funciona</p>
+                <h2 class="titulo titulo-claro" id="processo-titulo" data-anime>Do primeiro “oi” ao <em>site no ar</em></h2>
+            </div>
+        </div>
+
+        <ol class="lista-processo">
+                            <li data-anime>
+                    <span class="lista-processo-num">01</span>
+                    <h3>Conversa</h3>
+                    <p>Entendo o seu negócio, seus clientes e o que o site precisa resolver.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-processo-num">02</span>
+                    <h3>Planejamento</h3>
+                    <p>Defino as páginas, os conteúdos e o caminho que o visitante vai fazer até falar com você.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-processo-num">03</span>
+                    <h3>Design</h3>
+                    <p>Crio o visual com a cara da sua marca e você aprova antes de qualquer linha de código.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-processo-num">04</span>
+                    <h3>Desenvolvimento</h3>
+                    <p>Programo o site rápido, adaptado ao celular e preparado para o Google.</p>
+                </li>
+                            <li data-anime>
+                    <span class="lista-processo-num">05</span>
+                    <h3>Lançamento</h3>
+                    <p>Coloco no ar, te mostro como editar e sigo por perto para o que precisar.</p>
+                </li>
+                    </ol>
+    </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-titulo">
+    <div class="container">
+        <div class="cta-caixa">
+            <p class="rotulo" data-anime>Próximo passo</p>
+            <h2 class="cta-titulo" id="cta-titulo" data-anime>Vamos tirar o seu <em>site</em> do papel?</h2>
+            <p class="cta-texto" data-anime>Me conta sobre a sua empresa e o que você precisa. Eu respondo com ideias, prazo e valor, sem compromisso.</p>
+
+            <div class="cta-botoes" data-anime>
+                <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="botao botao-escuro botao-g">
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                    <span>Chamar no WhatsApp</span>
+                </a>
+                <a href="mailto:joaowergutz06@gmail.com" class="cta-email">
+                    joaowergutz06@gmail.com                    <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row footer-topo g-5">
+            <div class="col-lg-5">
+                <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                    <span class="logo-marca" aria-hidden="true">JW</span>
+                    <span class="logo-nome">João Wergutz</span>
+                </a>
+                <p class="texto texto-c footer-sobre">
+                    Desenvolvedor de sites para pequenas e médias empresas. Sites institucionais, lojas virtuais e páginas para anúncios
+                    rápidos, bonitos e prontos para o Google. Santa Clara do Sul/RS, Vale do Taquari.
+                </p>
+                <p class="selo-disponivel">
+                    <span class="ponto" aria-hidden="true"></span>
+                    Agenda aberta para novos projetos
+                </p>
+            </div>
+
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h2 class="footer-titulo">Navegação</h2>
+                <nav class="footer-menu" aria-label="Menu do rodapé">
+                    <ul>
+                                                    <li>
+                                <a href="/">Início</a>
+                            </li>
+                                                    <li>
+                                <a href="/projetos/">Projetos</a>
+                            </li>
+                                                    <li>
+                                <a href="/servicos/">Serviços</a>
+                            </li>
+                                                    <li>
+                                <a href="/sobre/">Sobre</a>
+                            </li>
+                                                    <li>
+                                <a href="/contato/">Contato</a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+
+            <div class="col-6 col-lg-4">
+                <h2 class="footer-titulo">Contato</h2>
+                <ul class="footer-contatos">
+                    <li>
+                        <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener">
+                            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                            <span>(51) 98936-5169</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:joaowergutz06@gmail.com">
+                            <i class="bi bi-envelope" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg></i>                            <span>joaowergutz06@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/" target="_blank" rel="noopener">
+                            <i class="bi bi-linkedin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></i>                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/joaowergutz" target="_blank" rel="noopener">
+                            <i class="bi bi-github" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></i>                            <span>GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-gigante" data-texto="João Wergutz" aria-hidden="true"></div>
+
+        <div class="footer-base">
+            <p>© 2026 João Pedro Wergutz. Todos os direitos reservados.</p>
+            <a href="/politica-de-privacidade/">Política de privacidade</a>
+            <a href="#conteudo" class="topo">Voltar ao topo <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i></a>
+        </div>
+    </div>
+</footer>
+
+<nav class="barra-contato" aria-label="Contato rápido">
+    <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="botao botao-destaque">
+        <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>        <span>WhatsApp</span>
+    </a>
+    <a href="/#analise" class="botao botao-contorno">
+        <i class="bi bi-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></i>        <span>Análise grátis</span>
+    </a>
+</nav>
+
+<a
+    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com João pelo WhatsApp"
+>
+    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i></a>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/joaowergutz/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script data-wp-strategy="defer" defer id="site-navigation-js" src="/wp-content/themes/joaowergutz/assets/js/navigation.js?ver=1.3.1"></script>
+<script data-wp-strategy="defer" defer id="gsap-js" src="/wp-content/themes/joaowergutz/assets/vendor/gsap.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="gsap-scrolltrigger-js" src="/wp-content/themes/joaowergutz/assets/vendor/ScrollTrigger.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="lenis-js" src="/wp-content/themes/joaowergutz/assets/vendor/lenis.min.js?ver=1.3.26"></script>
+<script data-wp-strategy="defer" defer id="site-animations-js" src="/wp-content/themes/joaowergutz/assets/js/animations.js?ver=1.3.1"></script>
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <script>
+        document.documentElement.classList.add('js');
+
+        /* Elementos animados começam ocultos (sem piscar); se as animações não rodarem em 3s
+           (GSAP fora do ar, erro no animations.js), tudo aparece */
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('anime');
+            setTimeout(function () {
+                if (!window.siteAnime) {
+                    document.documentElement.classList.remove('anime');
+                }
+            }, 3000);
+        }
+    </script>
+
+    <title>Sobre mim | João Wergutz</title>
+<meta name='robots' content='max-image-preview:large' />
+    <meta name="description" content="Conheça João Pedro Wergutz, desenvolvedor frontend com mais de 4 anos de experiência em JavaScript, PHP e WordPress, focado em performance, UX e SEO.">
+    <meta name="author" content="João Pedro Wergutz">
+    <meta name="theme-color" content="#0c0c0e">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="João Wergutz">
+    <meta property="og:title" content="Sobre mim | João Wergutz">
+    <meta property="og:description" content="Conheça João Pedro Wergutz, desenvolvedor frontend com mais de 4 anos de experiência em JavaScript, PHP e WordPress, focado em performance, UX e SEO.">
+    <meta property="og:url" content="https://joaowergutz.github.io/sobre/">
+    <meta property="og:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre mim | João Wergutz">
+    <meta name="twitter:description" content="Conheça João Pedro Wergutz, desenvolvedor frontend com mais de 4 anos de experiência em JavaScript, PHP e WordPress, focado em performance, UX e SEO.">
+    <meta name="twitter:image" content="https://joaowergutz.github.io/wp-content/themes/joaowergutz/assets/img/og-joao-wergutz.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/joaowergutz/assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/wp-content/themes/joaowergutz/assets/img/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/joaowergutz/assets/img/apple-touch-icon.png">
+    <link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/wp-content/themes/joaowergutz/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"/sobre/","mainEntity":{"@type":"Person","@id":"/#joao","name":"João Pedro Wergutz","alternateName":"João Wergutz","jobTitle":"Desenvolvedor Frontend","description":"Criação de sites, lojas virtuais e landing pages em Santa Clara do Sul e no Vale do Taquari. Rápidos, bonitos e prontos para o Google.","url":"/","image":"/wp-content/themes/joaowergutz/assets/img/joao.webp","email":"mailto:joaowergutz06@gmail.com","telephone":"+5551989365169","address":{"@type":"PostalAddress","addressLocality":"Santa Clara do Sul","addressRegion":"RS","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/","https://github.com/joaowergutz"],"knowsAbout":["Desenvolvimento frontend","JavaScript","PHP","WordPress","HTML","CSS","SEO","Performance web","UX","Lojas virtuais","Landing pages"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Sites institucionais","description":"A vitrine da sua empresa na internet: quem você é, o que faz e como falar com você.","url":"/servicos/#sites-institucionais","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lojas virtuais","description":"Venda pela internet com uma loja fácil de navegar e de administrar.","url":"/servicos/#lojas-virtuais","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Páginas para anúncios (Landing pages)","description":"Uma página com um único objetivo: transformar quem clicou no seu anúncio em contato.","url":"/servicos/#landing-pages","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Blogs","description":"Conteúdo que atrai visitas do Google e mostra que você entende do assunto.","url":"/servicos/#blogs","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Aparecer no Google (SEO)","description":"Ajustes para sua empresa aparecer quando alguém procura no Google pelo que você faz.","url":"/servicos/#seo","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Site mais rápido (Performance)","description":"Site lento perde cliente. Deixo o seu mais leve e rápido, principalmente no celular.","url":"/servicos/#performance","areaServed":"BR"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de sites","description":"Seu site atualizado, seguro e funcionando, sem você precisar se preocupar.","url":"/servicos/#manutencao","areaServed":"BR"}}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"/"},{"@type":"ListItem","position":2,"name":"Sobre","item":"/sobre/"}]}</script>
+
+<link rel='stylesheet' id='site-main-css' href='/wp-content/themes/joaowergutz/assets/css/main.css?ver=1.3.1' media='all' />
+<link rel="canonical" href="https://joaowergutz.github.io/sobre/" />
+</head>
+
+<body class="wp-singular page-template-default page page-id-8 wp-embed-responsive wp-theme-joaowergutz">
+
+
+<a class="screen-reader-text" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-row">
+            <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                <span class="logo-marca" aria-hidden="true">JW</span>
+                <span class="logo-nome">João Wergutz</span>
+            </a>
+
+            <nav class="nav-h d-none d-lg-block" aria-label="Menu principal">
+                <ul>
+                                            <li>
+                            <a
+                                href="/"
+                                                            >Início</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/projetos/"
+                                                            >Projetos</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/servicos/"
+                                                            >Serviços</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/sobre/"
+                                class="ativo" aria-current="page"                            >Sobre</a>
+                        </li>
+                                            <li>
+                            <a
+                                href="/contato/"
+                                                            >Contato</a>
+                        </li>
+                                    </ul>
+            </nav>
+
+            <div class="acoes-h">
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="botao botao-destaque botao-p botao-h"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                    <span>Vamos conversar</span>
+                </a>
+
+                <a
+                    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+                    target="_blank"
+                    rel="noopener"
+                    class="icone-h d-lg-none"
+                    aria-label="Falar com João pelo WhatsApp"
+                >
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                </a>
+
+                <button
+                    class="menu-toggle d-lg-none"
+                    type="button"
+                    aria-controls="menu-mobile"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-mobile" id="menu-mobile" data-lenis-prevent hidden>
+    <nav aria-label="Menu mobile">
+        <ul>
+                            <li>
+                    <a
+                        href="/"
+                                            >
+                        <span class="rotulo">01</span>
+                        Início                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/projetos/"
+                                            >
+                        <span class="rotulo">02</span>
+                        Projetos                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/servicos/"
+                                            >
+                        <span class="rotulo">03</span>
+                        Serviços                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/sobre/"
+                        aria-current="page"                    >
+                        <span class="rotulo">04</span>
+                        Sobre                    </a>
+                </li>
+                            <li>
+                    <a
+                        href="/contato/"
+                                            >
+                        <span class="rotulo">05</span>
+                        Contato                    </a>
+                </li>
+                    </ul>
+    </nav>
+
+    <div class="menu-mobile-rodape">
+        <a
+            href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+            target="_blank"
+            rel="noopener"
+            class="botao botao-destaque"
+        >
+            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>            <span>Falar no WhatsApp</span>
+        </a>
+        <a href="mailto:joaowergutz06@gmail.com" class="menu-mobile-email">
+            joaowergutz06@gmail.com        </a>
+    </div>
+</div>
+
+<main id="conteudo" tabindex="-1">
+
+<section class="page-hero sobre-hero">
+    <div class="page-hero-brilho" aria-hidden="true"></div>
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+                <p class="rotulo" data-anime>Sobre</p>
+                <h1 class="page-hero-titulo" data-anime>Oi, eu sou o <em>João</em>.</h1>
+                <p class="page-hero-texto" data-anime>
+                    João Pedro Wergutz, desenvolvedor frontend de Santa Clara do Sul (RS), com mais de
+                    4 anos de experiência criando sites que unem desempenho,
+                    usabilidade e uma boa experiência para quem visita.
+                </p>
+                <ul class="sobre-numeros" data-anime>
+                    <li><strong>+4</strong> anos criando sites</li>
+                    <li><strong>100%</strong> sob medida, sem tema pronto</li>
+                    <li><strong>Direto</strong> comigo, sem intermediários</li>
+                </ul>
+                <div class="hero-botoes" data-anime>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/" target="_blank" rel="noopener" class="botao botao-contorno">
+                        <i class="bi bi-linkedin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></i>                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/joaowergutz" target="_blank" rel="noopener" class="botao botao-contorno">
+                        <i class="bi bi-github" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></i>                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="hero-foto" data-anime>
+                    <div class="hero-foto-moldura">
+                        <img
+                            src="/wp-content/themes/joaowergutz/assets/img/joao.webp"
+                            alt="João Wergutz sorrindo, de camiseta preta"
+                            width="400"
+                            height="500"
+                            fetchpriority="high"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secao sobre-historia">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <p class="rotulo rotulo-escuro" data-anime>(01) Minha forma de trabalhar</p>
+                <h2 class="titulo" data-anime>Código bem feito, <em>conversa simples</em></h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="texto texto-g conteudo-editor" data-anime>
+                    <p>
+                        Há mais de 4 anos desenvolvo sites responsivos, modernos e otimizados
+                        com JavaScript, HTML, CSS, PHP e WordPress. No dia a dia, crio e mantenho projetos aplicando boas práticas de
+                        desenvolvimento, SEO e performance, sempre priorizando a usabilidade e a experiência de quem acessa.
+                    </p>
+                    <p>
+                        Gosto de entender o problema antes de pensar na solução. Por isso, antes de falar de cores e animações, quero saber
+                        quem são os seus clientes, o que eles procuram e o que precisam ver para escolher a sua empresa. O resultado é um site
+                        funcional, intuitivo e alinhado ao que o seu negócio precisa.
+                    </p>
+                    <p>
+                        A tecnologia muda rápido, e eu acompanho: estou sempre estudando e aplicando o que há de melhor no desenvolvimento web.
+                        E, como você fala direto comigo do início ao fim, nada se perde no caminho. Depois que o site vai ao ar, continuo por perto
+                        para ajustes, dúvidas e novas ideias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secao sobre-diferenciais">
+    <div class="container">
+        <p class="rotulo" data-anime>(02) O que você pode esperar</p>
+        <h2 class="titulo titulo-claro mb-48" data-anime>Compromissos de <em>cada projeto</em></h2>
+
+        <ul class="lista-diferenciais lista-diferenciais-escuro">
+                            <li data-anime>
+                    <h3>Você fala direto com quem desenvolve</h3>
+                    <p>Sem intermediários nem atendimento que passa o recado adiante. Suas ideias chegam inteiras ao site.</p>
+                </li>
+                            <li data-anime>
+                    <h3>Sob medida, sem tema pronto</h3>
+                    <p>Cada site é desenhado e programado para a sua empresa, com código limpo e sem plugins desnecessários.</p>
+                </li>
+                            <li data-anime>
+                    <h3>Rápido e preparado para o Google</h3>
+                    <p>Deixar o site pronto para aparecer no Google e abrir rápido no celular faz parte de todo projeto, não é um extra.</p>
+                </li>
+                            <li data-anime>
+                    <h3>Suporte depois da entrega</h3>
+                    <p>O site no ar é só o começo. Continuo disponível para ajustes, dúvidas e novas ideias.</p>
+                </li>
+                    </ul>
+    </div>
+</section>
+
+
+<section class="cta" aria-labelledby="cta-titulo">
+    <div class="container">
+        <div class="cta-caixa">
+            <p class="rotulo" data-anime>Próximo passo</p>
+            <h2 class="cta-titulo" id="cta-titulo" data-anime>Vamos tirar o seu <em>site</em> do papel?</h2>
+            <p class="cta-texto" data-anime>Me conta sobre a sua empresa e o que você precisa. Eu respondo com ideias, prazo e valor, sem compromisso.</p>
+
+            <div class="cta-botoes" data-anime>
+                <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="botao botao-escuro botao-g">
+                    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                    <span>Chamar no WhatsApp</span>
+                </a>
+                <a href="mailto:joaowergutz06@gmail.com" class="cta-email">
+                    joaowergutz06@gmail.com                    <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i>                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row footer-topo g-5">
+            <div class="col-lg-5">
+                <a href="/" class="logo" aria-label="João Wergutz, página inicial">
+                    <span class="logo-marca" aria-hidden="true">JW</span>
+                    <span class="logo-nome">João Wergutz</span>
+                </a>
+                <p class="texto texto-c footer-sobre">
+                    Desenvolvedor de sites para pequenas e médias empresas. Sites institucionais, lojas virtuais e páginas para anúncios
+                    rápidos, bonitos e prontos para o Google. Santa Clara do Sul/RS, Vale do Taquari.
+                </p>
+                <p class="selo-disponivel">
+                    <span class="ponto" aria-hidden="true"></span>
+                    Agenda aberta para novos projetos
+                </p>
+            </div>
+
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h2 class="footer-titulo">Navegação</h2>
+                <nav class="footer-menu" aria-label="Menu do rodapé">
+                    <ul>
+                                                    <li>
+                                <a href="/">Início</a>
+                            </li>
+                                                    <li>
+                                <a href="/projetos/">Projetos</a>
+                            </li>
+                                                    <li>
+                                <a href="/servicos/">Serviços</a>
+                            </li>
+                                                    <li>
+                                <a href="/sobre/">Sobre</a>
+                            </li>
+                                                    <li>
+                                <a href="/contato/">Contato</a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+
+            <div class="col-6 col-lg-4">
+                <h2 class="footer-titulo">Contato</h2>
+                <ul class="footer-contatos">
+                    <li>
+                        <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener">
+                            <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>                            <span>(51) 98936-5169</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:joaowergutz06@gmail.com">
+                            <i class="bi bi-envelope" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg></i>                            <span>joaowergutz06@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-wergutz-27a6013b9/" target="_blank" rel="noopener">
+                            <i class="bi bi-linkedin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></i>                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/joaowergutz" target="_blank" rel="noopener">
+                            <i class="bi bi-github" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></i>                            <span>GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-gigante" data-texto="João Wergutz" aria-hidden="true"></div>
+
+        <div class="footer-base">
+            <p>© 2026 João Pedro Wergutz. Todos os direitos reservados.</p>
+            <a href="/politica-de-privacidade/">Política de privacidade</a>
+            <a href="#conteudo" class="topo">Voltar ao topo <i class="bi bi-arrow-up-right" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></svg></i></a>
+        </div>
+    </div>
+</footer>
+
+<nav class="barra-contato" aria-label="Contato rápido">
+    <a href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site." target="_blank" rel="noopener" class="botao botao-destaque">
+        <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i>        <span>WhatsApp</span>
+    </a>
+    <a href="/#analise" class="botao botao-contorno">
+        <i class="bi bi-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></i>        <span>Análise grátis</span>
+    </a>
+</nav>
+
+<a
+    href="https://wa.me/5551989365169?text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20site."
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com João pelo WhatsApp"
+>
+    <i class="bi bi-whatsapp" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" focusable="false"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></i></a>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/joaowergutz/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script data-wp-strategy="defer" defer id="site-navigation-js" src="/wp-content/themes/joaowergutz/assets/js/navigation.js?ver=1.3.1"></script>
+<script data-wp-strategy="defer" defer id="gsap-js" src="/wp-content/themes/joaowergutz/assets/vendor/gsap.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="gsap-scrolltrigger-js" src="/wp-content/themes/joaowergutz/assets/vendor/ScrollTrigger.min.js?ver=3.12.5"></script>
+<script data-wp-strategy="defer" defer id="lenis-js" src="/wp-content/themes/joaowergutz/assets/vendor/lenis.min.js?ver=1.3.26"></script>
+<script data-wp-strategy="defer" defer id="site-animations-js" src="/wp-content/themes/joaowergutz/assets/js/animations.js?ver=1.3.1"></script>
+
+</body>
+</html>
